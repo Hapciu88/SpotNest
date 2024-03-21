@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="css/tenant.css">
+</head>
+<body>
+    <header>
+        <div class="user-profile">
+            <!-- Icon for user profile -->
+            <img src="assets/awkward.png" alt="User Profile Icon">
+        </div>
+        <div class="change-profile">
+            <!-- Link to change profile -->
+            <a href="landlord.html"><img src="assets/email.png" alt="change">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="radius-slider">
+            <label for="radius">Radius (miles): </label>
+            <input type="range" id="radius" name="radius" min="1" max="100" value="50">
+            <output for="radius" id="radiusValue">50</output>
+        </div>
+        <div id="map">
+            <!-- Clickable map -->
+            <a href="listing.html"><img src="assets/map.png" alt="Map" class="map"></a>
+        </div>
+    </main>
+    <footer>
+        <!-- Button to show listings -->
+        <a href="listings.html" class="show-listings">Show Listings</a>
+    </footer>
+    <script src="js/tenant.js"></script>
+</body>
+</html>

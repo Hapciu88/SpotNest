@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SpotNest</title>
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="assets/logo.png" class="logo" alt="SpotNest Logo">
+        <a href="login.html"><button id="signInBtn">Sign In</button></a>
+    </header>
+
+    <main>
+        <h1>Spot your next nest</h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="Enter a location">
+            <button id="showListingsBtn">Show Listings</button>
+        </div>
+
+        <div class="filters">
+            <div class="travel-modes">
+                <label>
+                    <input type="radio" name="mode" value="car"> Car
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="bicycle"> Bicycle
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="public_transport"> Public Transport
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="walking"> Walking
+                </label>
+            </div>
+            <div class="sliders">
+                <label for="distance">Distance</label>
+                <input type="range" id="distance">
+
+                <label for="time">Time</label>
+                <input type="range" id="time">
+            </div>
+        </div>
+
+        <div id="map">
+            <img src="assets/map.png" class="map" alt="map">
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

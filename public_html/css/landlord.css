@@ -1,0 +1,171 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.back-button img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+}
+
+.change-profile img {
+    width: auto;
+    height: 40px;
+}
+
+/* landlords.html CSS */
+
+.map {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* CSS for advert.html */
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-carousel img {
+    display: block;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    max-height: 100%; /* Ensure images don't exceed container height */
+    width: auto;
+    height: 100%;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+.property-description {
+    margin-top: 20px;
+}
+
+.advt-btn {
+    margin-top: 20px;
+}
+
+.advt-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2872b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.advt-btn a:hover {
+    background-color: #825319;
+}
+
+/* createAdvert.html CSS */
+
+.resizable-textbox {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    max-height: 400px; 
+    overflow-y: auto;
+}
+
+#resizable-input {
+    width: calc(100% - 16px);
+    min-height: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.uploaded-image {
+    width: auto; 
+    height: auto;
+    max-width: 300px; 
+    margin-bottom: 10px; 
+    display: block; 
+}
+
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+    .image-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        max-width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .advt-btn {
+        text-align: center;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+     }
+     .resizable-textbox {
+        min-height: 100px; /* Adjusted min-height for smaller screens */
+        max-height: none; /* Remove max-height restriction */
+    }
+
+    #resizable-input {
+        width: calc(100% - 16px); /* Adjusted width for smaller screens */
+        min-height: 100px; /* Adjusted min-height for smaller screens */
+        max-height: none; /* Remove max-height restriction */
+    }
+}

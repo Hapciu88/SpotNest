@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="css/landlord.css">
+</head>
+<body>
+    <header>
+        <div class="left-section">
+            <div class="back-button">
+                <a href="landlord.html"><img src="assets/back-icon.png" alt="Back"></a>
+            </div>
+            <div class="user-profile">
+                <img src="assets/awkward.png" alt="User Profile Icon">
+            </div>
+        </div>
+        <div class="change-profile">
+            <a href="tenant.html"><img src="assets/email.png" alt="change">
+            </a>
+        </div>
+    </header>
+     <div class="image-upload">
+        <input type="file" id="image-upload-input" accept="image/*" multiple>
+        <label for="image-upload-input">Upload Images</label>
+    </div>
+    <div class="image-display" id="image-display"></div>
+    
+    <div class="resizable-textbox">
+        <textarea id="resizable-input" placeholder="Write something..."></textarea>
+    </div>
+
+    <div class="publish-btn">
+        <button id="publish-button">Publish</button>
+    </div>
+
+    <script src="js/createAdvert.js"></script>
+</body>
+</html>
